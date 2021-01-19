@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="estilo.css" type="text/css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	  <header>
+
+	  	<h1>MOSTRA - NOTAS</h1>	
+	  	
+	  </header>
+
+
+	  <div class="container_02">
+
+	    <h2> - DIGITE O NOME DO ALUNO PARA VER SUA NOTA.</h2>
+		<input type="text" id="aluno"><br>
+		<button type="button" onclick="usaApi()">VERIFICAR NOTA</button>
+		<p id="demo"></p>
+
+	  </div>
+
+
+
+
+
+
+	<script>
+		function usaApi() {
+		  let aluno = document.getElementById("aluno").value;
+
+
+		  var xhttp = new XMLHttpRequest();
+
+		  xhttp.onreadystatechange = function() {
+		    if (this.readyState == 4 && this.status == 200) {
+		      document.getElementById("demo").innerHTML = this.responseText;
+		 
+		    }
+		  };
+
+		  xhttp.open("GET", "http://localhost/AULA/minhaFaculdadeApi.php?nome="+aluno, true);
+		  xhttp.send();
+		}
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

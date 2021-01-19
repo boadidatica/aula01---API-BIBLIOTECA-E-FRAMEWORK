@@ -1,0 +1,54 @@
+input{
+	border:solid 2px black;
+	border-radius: 10px;
+	padding: 10px;
+	font-size: 20px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+body{
+	padding: 0;
+	margin: 0;
+	font-family: 'Ubuntu', sans-serif;
+	text-align: center;
+
+}
+header{
+	background: blue;
+
+}
+h1{
+	color: white;
+	padding-top: 2em;
+	padding-bottom: 1em;
+	margin:0 auto;
+	max-width: 260px;
+}
+h2{
+	border-bottom: solid 5px black
+}
+.container_02{
+	border:solid 5px black;
+	max-width: 400px;
+	margin: 2em auto 2em auto;
+}
+button{
+	width: 150px;
+	margin-top: 2em;
+	background: white;
+	cursor: pointer;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 20px;
+	transition: .2s;
+}
+button:hover{
+	border-color: blue;
+	color: white;
+	background: blue;
+}
+#demo{
+	color: green;
+	font-size: 50px;
+
+}
